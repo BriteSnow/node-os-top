@@ -8,14 +8,14 @@ var osTops = require("../lib/osTops.js");
 
 console.log(">>>>> OsxTop mock test");
 var osxTop = new osTops.OsxTop();
-osxTop.extractContent(data.mac);
+osxTop.extractTextData(data.mac);
 console.log(osxTop.stats());
 console.log(osxTop.procs());
 
 
 console.log("\n\n>>>>> LnxTop mock test");
 var lnxTop = new osTops.LnxTop();
-lnxTop.extractContent(data.lnx);
+lnxTop.extractTextData(data.lnx);
 console.log(lnxTop.stats());
 console.log(lnxTop.procs());
 
